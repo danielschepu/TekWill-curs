@@ -1,0 +1,28 @@
+.button {
+  background-color: #2780df;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 15px;
+}
+#title {
+  background-color: #d6d6d6;
+  color: rgb(121, 179, 255);
+}
+p {
+  font-size: 16px;
+}
+a:hover {
+  color: rgb(255, 213, 121);
+}
+nav a::before {
+  content: "\2B50";
+}
+#title::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid black;
+}
+h1 {
+  background: rgb(173, 196, 225);
+}
