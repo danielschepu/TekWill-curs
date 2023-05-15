@@ -26,3 +26,18 @@ nav a::before {
 h1 {
   background: rgb(173, 196, 225);
 }
+
+.main-header {
+  display: flex;
+  align-items: baseline;
+}
+.post-img {
+  width: 100%;
+  height: auto;
+}
+#author {
+  padding: 10px;
+  margin: 20px;
+  background: green;
+  color: white;
+}
