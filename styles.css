@@ -1,0 +1,221 @@
+:root {
+  --primary-color: orange;
+  --light-text-color: rgb(255, 255, 255);
+  --dark-background-color: #252b42;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background-color: var(--dark-background-color);
+  font-family: Montserrat;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  height: 10vw;
+  margin: auto;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+nav h1 {
+  font-family: Montserrat;
+  font-size: 24px;
+}
+nav li {
+  font-family: Montserrat;
+  font-size: 14px;
+}
+nav a {
+  color: var(--light-text-color);
+  text-decoration: none;
+}
+nav img {
+  height: 14px;
+  width: auto;
+}
+
+.basic-section {
+  width: 100%;
+  height: 100vh;
+}
+.first-section-bg {
+  background-image: url("img/cover.png");
+  background-size: cover;
+  background-position: center;
+}
+.second-bg {
+  background: linear-gradient(
+    to bottom,
+    var(--dark-background-color) 0%,
+    var(--dark-background-color) 50%,
+    #16697a 50%,
+    #16697a 100%
+  );
+}
+
+#main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 50px auto;
+}
+#main-text h1 {
+  font-size: 400%;
+  text-align: center;
+  max-width: 500px;
+}
+#main-text h2 {
+  font-size: 40px;
+  text-align: center;
+  color: var(--light-text-color);
+}
+#main-text h3 {
+  font-size: 150%;
+  text-align: center;
+  color: var(--light-text-color);
+}
+#main-text p {
+  font-size: 15px;
+  text-align: center;
+  color: var(--light-text-color);
+  max-width: 450px;
+}
+
+.regular-button {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.regular-button button {
+  height: 50px;
+  width: 150px;
+  color: var(--light-text-color);
+  border-radius: 30px;
+  border: none;
+}
+.regular-button button:first-child {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.regular-button button:last-child {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.containers {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 30px;
+  justify-content: center;
+}
+.value-container {
+  background-color: var(--light-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.value-container h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--dark-background-color);
+}
+.value-container p {
+  font-size: 14px;
+  color: var(--dark-background-color);
+  width: 80%;
+}
+.center-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.value-container div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.value-container img {
+  width: 40px;
+}
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("img/form-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 286px);
+  grid-template-rows: repeat(4, 50px);
+  gap: 20px;
+}
+.form-container * {
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px rgb(163, 163, 163);
+}
+
+.form-container input:last-child {
+  grid-area: 3 / 1 / 5 / 3;
+}
+
+.form-container input::placeholder {
+  opacity: 0.5;
+  display: flex;
+}
+#form-submit {
+  background-color: orange;
+  color: white;
+  height: 50px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  margin-top: 8%;
+  font-size: 14px;
+}
+
+.feedback-containers {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 30px;
+  justify-content: center;
+}
+.feedback {
+  background-color: var(--light-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feedback h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--light-text-color);
+}
+.feedback h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--dark-background-color);
+}
+.feedback p {
+  font-size: 14px;
+  color: var(--dark-background-color);
+  width: 80%;
+}
